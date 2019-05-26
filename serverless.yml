@@ -17,8 +17,6 @@ provider:
   stage: dev
 
   region: us-east-1
-  environment:
-    STAGE: ${opt:stage}
 
   iamRoleStatements:
 
@@ -45,7 +43,7 @@ provider:
   environment:
 
     USERS_TABLE: ${self:custom.tableName}
-
+    STAGE: ${opt:stage}
 
 functions:
 
