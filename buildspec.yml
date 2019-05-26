@@ -6,7 +6,7 @@ phases:
         nodejs: 8
     commands:
     - npm install --no-progress --silent
-  build:
-    commands:
+#  build:
+#    commands:
 #    - npm run-script lint
-    - npm run test
+#    - npm run test
