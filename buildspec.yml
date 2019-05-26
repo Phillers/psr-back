@@ -1,10 +1,9 @@
 version: 0.2
 
 phases:
-  install:
+  pre_build:
     runtime-versions:
         nodejs: 8.10
-  pre_build:
     commands:
     - npm install --no-progress --silent
   build:
